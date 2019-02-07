@@ -1,3 +1,11 @@
+[![Project Status: Inactive.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![Build Status](https://travis-ci.org/ms609/CongreveLamsdell2016.svg?branch=master)](https://travis-ci.org/ms609/CongreveLamsdell2016)
+[![CRAN Status Badge](https://www.r-pkg.org/badges/version/CongreveLamsdell2016)](https://cran.r-project.org/package=CongreveLamsdell2016)
+[![CRAN Downloads](https://cranlogs.r-pkg.org/badges/CongreveLamsdell2016)](https://cran.r-project.org/package=CongreveLamsdell2016)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2536874.svg)](https://doi.org/10.5281/zenodo.2536874)
+
+
+
 # CongreveLamsdell2016
 
 This R package provides data and analyses that accompany the paper
@@ -16,10 +24,17 @@ Some of these data are used in the [`Quartet`](https://ms609.github.io/Quartet) 
 Equivalent data and analyses from data simulated by O'Reilly _et al._ (2016) 
 are available at [ms609.github.io/OReillyEtAl2016](https://ms609.github.io/OReillyEtAl2016).
 
-## Installation 
+## Installation
+## 
+Install and load the library from CRAN as follows:
 
-Install the package in `R` with:
-`devtools::install_github('ms609/CongreveLamsdell2016')`.
+```
+install.packages('CongreveLamsdell2016')
+library('CongreveLamsdell2016')
+```
+
+<!--You can install the development version with:
+`devtools::install_github('ms609/CongreveLamsdell2016')`.-->
 
 
 ## Documentation

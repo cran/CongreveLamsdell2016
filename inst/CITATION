@@ -6,6 +6,7 @@ citEntry(entry = "article",
         title = "Bayesian and parsimony approaches reconstruct informative trees from simulated morphological datasets",
         year = "2019",
         volume = "15",
+        issue = "2",
         pages = "20180632",
 
         textVersion =
