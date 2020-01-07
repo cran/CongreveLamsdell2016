@@ -1,8 +1,6 @@
 ## ----initialize, echo=FALSE, message=FALSE-------------------------------
-library("Quartet")
 library("Ternary")
 library("CongreveLamsdell2016")
-#if (!require("CongreveLamsdell2016")) devtools::load_all()
 data('clBremPartitions', 'clBremQuartets', 'clMkvPartitions', 'clMkvQuartets',
      'clBootFreqPartitions', 'clBootFreqQuartets', 
      'clBootGcPartitions', 'clBootGcQuartets',
@@ -116,7 +114,7 @@ Plottem <- function (i) {
   AddLegend()
 }
 
-## ----Summary, echo=FALSE, fig.width=9, fig.height=3----------------------
+## ----Summary, echo=FALSE, fig.height=3, fig.width=9, warning=FALSE-------
 x <- Sys.setlocale("LC_ALL", "C") # allows PCH=183
 par(mfrow=c(1, ROWS[2]), mar=MARGINS)
 
@@ -146,303 +144,303 @@ text  (sqrt(3/4) * 1.01, 0.30, pos=3, 'Increasing RF distance', cex=0.8, srt=270
 
 AddLegend()
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(1)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(2)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(3)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(4)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(5)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(6)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(7)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(8)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(9)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(10)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(11)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(12)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(13)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(14)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(15)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(16)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(17)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(18)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(19)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(20)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(21)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(22)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(23)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(24)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(25)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(26)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(27)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(28)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(29)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(30)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(31)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(32)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(33)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(34)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(35)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(36)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(37)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(38)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(39)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(40)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(41)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(42)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(43)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(44)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(45)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(46)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(47)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(48)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(49)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(50)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(51)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(52)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(53)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(54)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(55)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(56)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(57)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(58)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(59)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(60)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(61)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(62)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(63)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(64)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(65)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(66)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(67)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(68)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(69)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(70)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(71)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(72)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(73)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(74)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(75)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(76)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(77)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(78)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(79)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(80)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(81)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(82)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(83)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(84)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(85)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(86)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(87)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(88)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(89)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(90)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(91)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(92)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(93)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(94)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(95)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(96)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(97)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(98)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(99)
 
-## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
+## ---- echo=FALSE, fig.width=9, fig.height=6, warning=FALSE---------------
 par(mfrow=ROWS, mar=MARGINS); x <- Plottem(100)
 

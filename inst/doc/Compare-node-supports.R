@@ -1,5 +1,4 @@
 ## ----initialize, echo=FALSE, message=FALSE-------------------------------
-library("Quartet")
 library("Ternary")
 library("CongreveLamsdell2016")
 
@@ -209,26 +208,29 @@ text  (sqrt(3/4) * 1.01, 0.30, pos=3, 'Increasing RF distance', cex=0.8, srt=270
 AddLegend(an='k3')
 
 ## ----compare-best, results='asis', echo=FALSE----------------------------
-TreeBests <- function (dataset) vapply(dataset, function (item) 
-  apply(apply(item, 1, function (x)
-    QuartetDivergence(t(x))), 1, max), double(dim(dataset[[1]])[3]))
-
-treeBests <- vapply(list(clBootGcQuartets, clBootFreqQuartets,
-                         clJackGcQuartets, clJackFreqQuartets, clBremQuartets),
-                    TreeBests, 
-                    matrix(0, nrow=dim(clBootGcQuartets[[1]])[3],
-                           ncol=length(clBootGcQuartets))
-                    )
-
-
-
-tests <- apply(treeBests, 2, function (slice)
-  apply(slice, 2, function (column) t.test(column, slice[, 1])$p.value))
-
-rownames(tests) <- c( 'Bootstrap GC', 'Bootstrap Freq',
-                      'Jackknife GC', 'Jackknife Freq', 'Bremer')
-knitr::kable(tests)
-
+if (requireNamespace('Quartet', quietly = TRUE)) {
+  TreeBests <- function (dataset) vapply(dataset, function (item) 
+    apply(apply(item, 1, function (x)
+      Quartet::QuartetDivergence(t(x))), 1, max), double(dim(dataset[[1]])[3]))
+  
+  treeBests <- vapply(list(clBootGcQuartets, clBootFreqQuartets,
+                           clJackGcQuartets, clJackFreqQuartets, clBremQuartets),
+                      TreeBests, 
+                      matrix(0, nrow=dim(clBootGcQuartets[[1]])[3],
+                             ncol=length(clBootGcQuartets))
+                      )
+  
+  
+  
+  tests <- apply(treeBests, 2, function (slice)
+    apply(slice, 2, function (column) t.test(column, slice[, 1])$p.value))
+  
+  rownames(tests) <- c( 'Bootstrap GC', 'Bootstrap Freq',
+                        'Jackknife GC', 'Jackknife Freq', 'Bremer')
+  knitr::kable(tests)
+} else {
+  message("Package 'Quartet' is not available; cannot display table.")
+}
 
 ## ---- echo=FALSE, fig.width=9, fig.height=6------------------------------
 par(mfrow=ROWS, mar=MARGINS); x <- CompareNodeSupports(1)
