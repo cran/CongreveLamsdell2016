@@ -11,32 +11,56 @@
 \alias{clPlotBestAverageSplits}
 \title{Plot results}
 \usage{
-clPlotQuartets(dataset, tree, cex = 1.1, pch = 2,
-  col = CongreveLamsdell2016::clColours, ...)
+clPlotQuartets(
+  dataset,
+  tree,
+  cex = 1.1,
+  pch = 2,
+  col = CongreveLamsdell2016::clColours,
+  ...
+)
 
-clPlotAverageQuartets(dataset, cex = 1.1, pch = 2,
-  col = CongreveLamsdell2016::clColours, ...)
+clPlotAverageQuartets(
+  dataset,
+  cex = 1.1,
+  pch = 2,
+  col = CongreveLamsdell2016::clColours,
+  ...
+)
 
-clPlotTheseAverageQuartets(dataset, cex = 1.1, pch = 2,
-  col = "black", ...)
+clPlotTheseAverageQuartets(dataset, cex = 1.1, pch = 2, col = "black", ...)
 
-clPlotSplits(dataset, tree, cex = 1.1, pch = 2,
-  col = CongreveLamsdell2016::clColours, ...)
+clPlotSplits(
+  dataset,
+  tree,
+  cex = 1.1,
+  pch = 2,
+  col = CongreveLamsdell2016::clColours,
+  ...
+)
 
-clPlotTheseAverageSplits(dataset, cex = 1.1, pch = 2, col = "black",
-  ...)
+clPlotTheseAverageSplits(dataset, cex = 1.1, pch = 2, col = "black", ...)
 
-clPlotTheseBestAverageSplits(dataset, cex = 1.1, pch = 2,
-  col = "black", ...)
+clPlotTheseBestAverageSplits(dataset, cex = 1.1, pch = 2, col = "black", ...)
 
-clPlotAverageSplits(dataset, cex = 1.1, pch = 2,
-  col = CongreveLamsdell2016::clColours, ...)
+clPlotAverageSplits(
+  dataset,
+  cex = 1.1,
+  pch = 2,
+  col = CongreveLamsdell2016::clColours,
+  ...
+)
 
-clPlotBestAverageSplits(dataset, cex = 1.1, pch = 2,
-  col = CongreveLamsdell2016::clColours, ...)
+clPlotBestAverageSplits(
+  dataset,
+  cex = 1.1,
+  pch = 2,
+  col = CongreveLamsdell2016::clColours,
+  ...
+)
 }
 \arguments{
-\item{dataset}{Dataset to plot, for example \code{\link[=clResults]{clBootGcQuartets}}.}
+\item{dataset}{Dataset to plot, for example \verb{\link[=clResults]\{clBootGcQuartets\}}.}
 
 \item{tree}{Integer specifying which tree to plot.}
 
@@ -54,21 +78,21 @@ Plots the results of the analyses of the Congreve & Lamsdell (2016) datasets.
 }
 \section{Functions}{
 \itemize{
-\item \code{clPlotAverageQuartets}: Plots average across all 100 trees.
+\item \code{clPlotAverageQuartets()}: Plots average across all 100 trees.
 
-\item \code{clPlotTheseAverageQuartets}: Plot average for single dataset across all 100 trees.
+\item \code{clPlotTheseAverageQuartets()}: Plot average for single dataset across all 100 trees.
 
-\item \code{clPlotSplits}: Splits equivalent of \code{clPlotQuartets}.
+\item \code{clPlotSplits()}: Splits equivalent of \code{clPlotQuartets}.
 
-\item \code{clPlotTheseAverageSplits}: Splits equivalent of \code{clPlotTheseAverageQuartets}.
+\item \code{clPlotTheseAverageSplits()}: Splits equivalent of \code{clPlotTheseAverageQuartets}.
 
-\item \code{clPlotTheseBestAverageSplits}: Splits equivalent of \code{clPlotTheseBestAverageQuartets}.
+\item \code{clPlotTheseBestAverageSplits()}: Splits equivalent of \code{clPlotTheseBestAverageQuartets}.
 
-\item \code{clPlotAverageSplits}: Splits equivalent of \code{clPlotAverageQuartets}.
+\item \code{clPlotAverageSplits()}: Splits equivalent of \code{clPlotAverageQuartets}.
 
-\item \code{clPlotBestAverageSplits}: Splits equivalent of \code{clPlotAverageQuartets}.
+\item \code{clPlotBestAverageSplits()}: Splits equivalent of \code{clPlotAverageQuartets}.
+
 }}
-
 \author{
 Martin R. Smith
 }

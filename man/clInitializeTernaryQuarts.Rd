@@ -5,14 +5,27 @@
 \alias{clInitializeTernarySplits}
 \title{Initialize ternary plots for quartet plotting}
 \usage{
-clInitializeTernaryQuarts(zoom = 1, padding = 0.1, gridLines = 10,
-  fontSize = 1, gridCol = "#DBDBDB", backgroundCol = "#FDFDFE",
-  xLim = c(0, 1/zoom) - 0.01, yLim = c(0.5 - (1/zoom), 0.5),
-  isometric = TRUE)
+clInitializeTernaryQuarts(
+  zoom = 1,
+  padding = 0.1,
+  gridLines = 10,
+  fontSize = 1,
+  gridCol = "#DBDBDB",
+  backgroundCol = "#FDFDFE",
+  xLim = c(0, 1/zoom) - 0.01,
+  yLim = c(0.5 - (1/zoom), 0.5),
+  isometric = TRUE
+)
 
-clInitializeTernarySplits(fontSize = 1, xLim = NULL, yLim = NULL,
-  gridCol = "#DBDBDB", backgroundCol = "#FDFDFE", padding = 0.1,
-  isometric = TRUE)
+clInitializeTernarySplits(
+  fontSize = 1,
+  xLim = NULL,
+  yLim = NULL,
+  gridCol = "#DBDBDB",
+  backgroundCol = "#FDFDFE",
+  padding = 0.1,
+  isometric = TRUE
+)
 }
 \arguments{
 \item{zoom}{Level of magnification (times), used to adjust ticks and scale.}
@@ -37,7 +50,7 @@ Sets up a blank ternary plot ready for analytical results to be added.
 }
 \section{Functions}{
 \itemize{
-\item \code{clInitializeTernarySplits}: Initialize ternary plots for
+\item \code{clInitializeTernarySplits()}: Initialize ternary plots for
 partition plotting.
-}}
 
+}}

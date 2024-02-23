@@ -4,7 +4,9 @@
 \name{clCI}
 \alias{clCI}
 \title{Consistency indices}
-\format{An object of class \code{numeric} of length 100.}
+\format{
+An object of class \code{numeric} of length 100.
+}
 \usage{
 clCI
 }

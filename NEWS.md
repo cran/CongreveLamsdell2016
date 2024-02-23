@@ -1,3 +1,7 @@
+# CongreveLamsdell2016 v1.0.3
+
+* Tidy formatting to pass CRAN checks.
+
 # CongreveLamsdell2016 v1.0.2
 
 * Handle non-availability of suggested packages.
